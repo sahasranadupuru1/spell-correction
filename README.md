@@ -11,7 +11,7 @@ are installed in `spellcheck/data/`, so checking works offline.
 ## Quick start
 
 ```bash
-cd /Users/likki/Downloads/daa_project
+go to the folder the project is located in
 
 python3 -m venv .venv
 source .venv/bin/activate
