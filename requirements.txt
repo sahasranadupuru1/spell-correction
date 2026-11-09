@@ -1,0 +1,3 @@
+# Runtime dependencies: none.  The project uses only the Python standard
+# library.  The SCOWL-derived word list and frequency file are bundled in
+# spellcheck/data/, so checking works offline.

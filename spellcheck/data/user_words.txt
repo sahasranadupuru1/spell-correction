@@ -1,0 +1,5 @@
+# One word per line. Lines beginning with # are ignored.
+# Add names, technical terms, and words missing from the main list.
+kubernetes
+postgresql
+typescript

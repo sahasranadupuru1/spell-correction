@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scowl-spellcheck"
+version = "1.0.0"
+description = "A dependency-free English spell checker with Levenshtein suggestions and a SCOWL dictionary"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "DAA Project" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = []
+
+[project.optional-dependencies]
+build = ["wordfreq==3.1.1"]
+
+[project.scripts]
+spellcheck = "spellcheck.cli:main"
+
+[tool.setuptools]
+packages = ["spellcheck", "spellcheck.data", "spellcheck.data.licenses"]
+
+[tool.setuptools.package-data]
+spellcheck = ["data/*.txt", "data/*.tsv", "data/licenses/*"]
